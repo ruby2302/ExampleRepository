@@ -11,6 +11,7 @@ on:
     branches: [ main ]
   schedule:
   - cron: '0/5 * * * *'
+  
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -32,3 +33,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: List current directory contents
+        run: ls -la
