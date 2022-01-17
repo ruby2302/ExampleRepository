@@ -45,3 +45,6 @@ jobs:
           echo "Created file1.txt, file2.txt & file3.txt"
           echo "Listing current directory contents"
           ls
+
+      - name: Deleting file2.txt
+        run: rm file2.txt
