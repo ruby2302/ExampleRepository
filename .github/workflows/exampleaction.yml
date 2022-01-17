@@ -40,8 +40,8 @@ jobs:
         
       - name: Creating new files and listing them
         run: 
-          echo I am being run from a script
+          echo "I am being run from a script."
           touch file1.txt file2.txt file3.txt
-          echo Created file1.txt, file2.txt & file3.txt
-          echo Listing current directory contents
-          ls -la
+          echo "Created file1.txt, file2.txt & file3.txt"
+          echo "Listing current directory contents"
+          ls
